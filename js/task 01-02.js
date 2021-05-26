@@ -9,11 +9,10 @@ user_name = 'John';
 admin = user_name;
 console.log(admin);
 
-//task2
-console.log("> Task2:");
-
 let login = "Admin";
 let password = "TheMaster";
+
+console.log("Who's there?");
 
 if (login == "Admin") {
     if (password == "TheMaster") {
@@ -28,3 +27,38 @@ if (login == "Admin") {
 } else if (login != "Admin") {
     console.log("I don't know you");
 } 
+
+//task2
+console.log("> Task2:");
+
+let login2 = "Admin";
+let password2 = "TheMaster";
+
+console.log("Who's there?");
+
+switch (login2) {
+	case "Admin": {
+		switch (password2) {
+			case "TheMaster": {
+				 console.log("Welcome!");
+				 break;
+			}
+			case "Cancel": {
+				 console.log("Canceled.");
+				 break;
+			}
+			default: {
+				 console.log("Wrong password");
+			}			
+			
+		}
+		break;
+	}
+	case "Cancel": {
+		console.log("Canceled.");
+		break;
+	}
+	default: {
+		console.log("I don't know you");
+	}
+}
