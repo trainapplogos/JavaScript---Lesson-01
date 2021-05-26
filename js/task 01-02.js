@@ -50,7 +50,6 @@ switch (login2) {
 			default: {
 				 console.log("Wrong password");
 			}			
-			
 		}
 		break;
 	}
